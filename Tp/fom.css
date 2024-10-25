@@ -1,0 +1,82 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Evita barras de desplazamiento */
+    height: 100vh; /* Altura total de la ventana */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background: linear-gradient(to right, #00ffff, #ff00ff); /* Fondo con gradiente */
+}
+
+/* Estilos para el formulario */
+form {
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    padding: 40px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.75), 0 0 30px rgba(255, 0, 255, 0.75); /* Sombra con efecto neón */
+    border: 2px solid #00ffff; /* Borde cian */
+    width: 300px; /* Ancho fijo */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilos para el título principal */
+h1 {
+    color: #00ffff; /* Color cian */
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff; /* Efecto de texto neón */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 40px; /* Espacio interno */
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+    color: #00ffff; /* Color cian */
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff; /* Efecto de texto neón */
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #00ffff; /* Borde cian */
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    color: #fff; /* Texto blanco */
+    outline: none; /* Elimina el contorno al enfocar */
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffff; /* Sombra con efecto neón */
+}
+
+/* Estilos para el botón de envío */
+button[type="submit"] {
+    background-color: #ff00ff; /* Fondo magenta */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #00ffff; /* Borde cian */
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border-radius: 5px;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para efectos hover */
+}
+
+/* Efectos al pasar el ratón sobre el botón */
+button[type="submit"]:hover {
+    background-color: #00ffff; /* Cambia a color cian */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilos para los mensajes de error */
+.error {
+    color: #ff0000; /* Texto rojo */
+    font-weight: bold;
+    margin-top: 5px;
+}

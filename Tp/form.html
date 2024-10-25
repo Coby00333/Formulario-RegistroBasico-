@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <!-- Enlace al archivo de estilos CSS externo -->
+  <link rel="stylesheet" href="fom.css">
+</head>
+<body>
+  <!-- Título principal del formulario -->
+  <h1>Registration Form</h1>
+  
+  <!-- Formulario de registro -->
+  <form id="registration-form">
+    <!-- Campo para el nombre -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <!-- Contenedor para mostrar errores relacionados con el nombre -->
+    <div id="name-error" class="error"></div>
+
+    <!-- Campo para el email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <!-- Contenedor para mostrar errores relacionados con el email -->
+    <div id="email-error" class="error"></div>
+
+    <!-- Campo para la contraseña -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <!-- Contenedor para mostrar errores relacionados con la contraseña -->
+    <div id="password-error" class="error"></div>
+
+    <!-- Botón para enviar el formulario -->
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Enlace al archivo JavaScript externo para la validación y el manejo de eventos -->
+  <script src="event.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
